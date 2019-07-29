@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-juil.-2019, 12:04:57
+    Author     : Formateur
+*/
+body {    
+font-family: "Comic Sans MS", cursive, sans-serif; 
+font-size: 1.5em;
+padding: 0.5em;
+display: flex;
+}
+
+h1{font-family: 'Ewert';
+   font-size: 1.5em;
+   text-align: center;
+}
+p{text-align: center}
+
+aside{
+    width: 19%;
+    background-color: grey;
+}
+section{
+    width: 85%;
+    padding-left: 0.5em;
+}
+article{
+    display: flex;
+
+}
+figure{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+img{
+    border: .5em lightskyblue ;
+    border-radius: 0 0 2em 0;
+    /* opacity: 0.5; */
+-webkit-box-shadow: 9px 10px 4px 0px rgba(0,0,0,0.84);
+-moz-box-shadow: 9px 10px 4px 0px rgba(0,0,0,0.84);
+-box-shadow: 9px 10px 4px 0px rgba(0,0,0,0.84);
+}
+
+img:hover{
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 1024px){
+    aside{
+        display: none;
+    }
+        article{
+         flex-direction: column;   
+        }
+        @media only screen and (max-width: 800px) {
+            figure{
+                display: none;
+            }
+            body{
+                font-size: 1.2em;
+            }
+        }
+
+}
